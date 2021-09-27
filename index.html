@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randoms Number Generation</title>
+    <style>
+        body{
+            background-image: url(pic/bg4.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            color:mediumblue;
+        }
+        .set{
+            padding-top: 30px;
+            padding-right: 190px;
+            font-family: cursive;
+        }
+        .se{
+            padding-top: 180px;
+            padding-right: 270px;
+            font-family: cursive;
+        }
+        .sw{
+            padding-top: 30px;
+            padding-right: 190px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 class="se">Generation a Random Number between 0 TO 100</h1>
+        <br>
+        <h1 class="set">The Random Number for You is </h1>
+        <center>
+            <h1 id="dem" class="sw"></h1>
+        </center>
+        </center>
+        <script>
+            document.getElementById("dem").innerHTML=Math.floor(Math.random()*100)+1;
+        </script>
+</body>
+</html>
